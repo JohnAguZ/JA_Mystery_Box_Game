@@ -76,7 +76,7 @@ class Game:
         self.balance.set(current_balance)
 
         # Edit label so user can see their balance
-        set.balance_label.configure(text="Balance: {}".format(current_balance))
+        self.balance_label.configure(text="Balance: {}".format(current_balance))
 
 
 # main routine
