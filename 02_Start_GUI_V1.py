@@ -53,10 +53,14 @@ class Start:
                                          font=button_font, bg="#00994D")
         self.high_stakes_button.grid(row=0, column=2, padx=5, pady=10)
 
+        # error label (added by GK)
+        self.amount_error_label = Label(self.start_frame, text="")
+        self.amount_error_label.grid(row=4)
+
         # Help Button
         self.help_button = Button(self.start_frame, text="Help / Rules",
                                   bg="#808080", fg="white", font=button_font)
-        self.help_button.grid(row=4, pady=10)
+        self.help_button.grid(row=5, pady=10)
 
         #
 
@@ -92,7 +96,7 @@ class Start:
                 error_feedback = "Sorry, you can oly afford to " \
                                  "play a medium stakes game."
         except ValueError:
-            has_errors = "yes":
+            has_errors = "yes"
             error_feedback = "Pleas enter a dollar amount (No text / Decimals)"
 
         if has_errors == "yes":
