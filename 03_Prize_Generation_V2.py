@@ -37,3 +37,8 @@ for item in range(0, NUM_TRIALS):
 
 print("Paid In: ${}".format(cost))
 print("Pay Out: ${}".format(winnings))
+
+if winnings > cost:
+    print("You came out ${} ahead".format(winnings - cost))
+else:
+    print("Sorry, you lost ${}".format(cost - winnings))
