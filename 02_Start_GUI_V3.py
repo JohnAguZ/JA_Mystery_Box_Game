@@ -120,7 +120,7 @@ class Start:
 
             if starting_balance < 5:
                 has_errors = "yes"
-                error_feedback = "Sorry, the least you" \
+                error_feedback = "Sorry, the least you " \
                                  "can play with is $5"
             elif starting_balance > 50:
                 has_errors = "yes"
@@ -155,9 +155,6 @@ class Start:
         starting_balance = self.starting_funds.get()
 
         Game(self, stakes, starting_balance)
-
-        # Hide start up window
-
 
 
 class Game:
