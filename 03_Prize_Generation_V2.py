@@ -2,8 +2,6 @@
 # randint would randomly generate al four of the numbers 1, 2, 3, 4
 
 
-
-
 import random
 
 NUM_TRIALS = 10

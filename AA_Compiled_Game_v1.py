@@ -159,13 +159,10 @@ class Start:
         # Hide start up window
 
 
-
 class Game:
     def __init__(self, partner, stakes, starting_balance):
         print(stakes)
         print(starting_balance)
-
-        partner.lowstakes_button.config(state=DISABLED)
 
         # Initialise variables
         self.balance = IntVar()
